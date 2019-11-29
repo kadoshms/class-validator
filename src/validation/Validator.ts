@@ -7,6 +7,8 @@ import {ValidationExecutor} from "./ValidationExecutor";
 import {ValidationOptions} from "../decorator/ValidationOptions";
 import * as validator from "validator";
 
+const libPhoneNumber = require("google-libphonenumber");
+
 /**
  * Validator performs validation of the given object based on its metadata.
  */
@@ -18,7 +20,7 @@ export class Validator {
 
     private validatorJs = validator;
     private libPhoneNumber = {
-        phoneUtil: require("google-libphonenumber").PhoneNumberUtil.getInstance(),
+        phoneUtil: libPhoneNumber.PhoneNumberUtil.getInstance(),
     };
     private _isEmptyObject = function(object: object) {
         for (const key in object) {
