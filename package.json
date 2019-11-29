@@ -1,6 +1,6 @@
 {
-  "name": "class-validator",
-  "private": true,
+  "name": "@kadoshms/class-validator",
+  "private": false,
   "version": "0.11.0",
   "description": "Class-based validation with Typescript / ES6 / ES5 using decorators or validation schemas. Supports both node.js and browser",
   "license": "MIT",
@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/typestack/class-validator.git"
+    "url": "https://github.com/kadoshms/class-validator"
   },
   "bugs": {
-    "url": "https://github.com/typestack/class-validator/issues"
+    "url": "https://github.com/kadoshms/class-validator/issues"
   },
   "tags": [
     "validator",
